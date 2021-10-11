@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.7', '3.8']
+        python-version: [ '3.7', '3.8' ]
 
     steps:
       - uses: actions/checkout@v2
@@ -19,11 +19,11 @@ jobs:
       - name: Install dependencies
         run: |
           pip install poetry
-          poetry install
+          poetry install && poetry update
           poetry run pre-commit install
 
       - name: Run pre-commit hooks
-        run: pre-commit run --all-files
+        run: poetry run pre-commit run --all-files
 
       - name: Testing with pytest
         run: poetry run pytest
