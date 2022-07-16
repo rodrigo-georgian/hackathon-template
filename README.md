@@ -4,21 +4,21 @@ Personal cookiecutter template for Python projects.
 ## Included
 - Package management with Poetry
 - pre-commit hooks
-- Liting with flake8, black, isort
+- Linting with flake8, black, isort
 - Type Checking with mypy
 - Tests with pytest, pytest-cov
 - CI with Github Actions
 
 ## Usage
 Install [cookiecutter](https://cookiecutter.readthedocs.io/en/1.7.2/) with [pipx](https://github.com/pypa/pipx)
-```
-pipx install cookiecutter
+```bash
+$ pipx install cookiecutter
 ```
 
 Set up a new project with this template
-```
-cookiecutter https://github.com/kennethcheo/python-template.git
-cookiecutter git+ssh://git@github.com/kennethcheo/python-template.git
+```bash
+$ cookiecutter https://github.com/kennethcheo/python-template.git
+$ cookiecutter git+ssh://git@github.com/kennethcheo/python-template.git
 ```
 
 ### Todo
