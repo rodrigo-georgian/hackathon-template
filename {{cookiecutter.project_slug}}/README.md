@@ -15,8 +15,8 @@ _TODO: Describe the main work streams (teams) in this hackathon, try to keep it 
 
 1. Recommended -- create and activate a conda env for this project:
 ```bash
-conda create -n {{cookiecutter.project-slug}} python=3.9
-conda activate {{cookiecutter.project-slug}}
+conda create -n {{cookiecutter.project_slug}} python=3.9
+conda activate {{cookiecutter.project_slug}}
 ```
 2. Install package
 ```
@@ -41,7 +41,7 @@ One of the main reasons make this repo easily installable is to facilitate code 
 
 With this in mind we recommend that you consider implementing the following utilities to make it easy for everyone to use them:
 
-- `src/{{cookiercutter.package_name}}/utils` a directory with shared tools.
+- `src/{{cookiecutter.package_name}}/utils` a directory with shared tools.
 
     - `../utils/datasets.py`: Dataset classes that can load data relevant to the hackathon. The idea is to make it as easy as possible to load data in a consistent way.
 
