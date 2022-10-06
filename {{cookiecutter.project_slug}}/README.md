@@ -48,3 +48,13 @@ With this in mind we recommend that you consider implementing the following util
     - `.../utils/metrics.py`: metric classes that compute common metrics of interest. Usually, improving these metrics is the whole goal of the hackathon.
 
 - `notebooks/start_here.ipynb`: A notebook that shows how to import and call any shared utilities, and demonstrates a baseline to improve on for the final goal.
+
+# Repo Info
+## Poetry
+We use [poetry](https://python-poetry.org/) as our dependancy manager.
+The link above has great documentation but there is a TL;DR.
+
+- Install the package: `poetry install`
+- Add a dependancy: `poetry add <python-lib>`
+- Where are dependancies specified? `pyproject.toml` include the high level requirements. The latests exact versions installed are in `poetry.lock`.
+
