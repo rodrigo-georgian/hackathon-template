@@ -1,4 +1,4 @@
-# Hackaton Package Template 
+# Hackathon Package Template 
 
 ## Included
 - Package management with Poetry
