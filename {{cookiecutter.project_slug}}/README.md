@@ -3,10 +3,10 @@
 _TODO: Describe how to access the instances used for this hackathon and any other necessary tools._
 
 ## Data
-_TODO: Describe how to access the data used for this hackathon, preferebly through code in src/utils._
+_TODO: Describe how to access the data used for this hackathon, preferably through code in src/utils._
 
 ## Goals
-_TODO: Describe the goal of this hackathon, preferebly through quatifiable metrics in src/utils._
+_TODO: Describe the goal of this hackathon, preferably through quantifiable metrics in src/utils._
 
 ## Streams
 _TODO: Describe the main work streams (teams) in this hackathon, try to keep it up to date with changes or additional streams._
@@ -18,14 +18,25 @@ _TODO: Describe the main work streams (teams) in this hackathon, try to keep it 
 conda create -n {{cookiecutter.project_slug}} python=3.9
 conda activate {{cookiecutter.project_slug}}
 ```
-2. Install package
+
+Note: After creating the env, you can also use the `make env` command from the root folder to activate the environment.
+
+1. Install package
 ```
 poetry install
 ```
-3. Check installation worked by running 
+1. Check installation worked by running 
 ```
 pytest .
 ```
+
+Note: You can also use `make test` to run `pytest .`
+
+1. Create private environment file (this will not be committed!)
+```
+cp .env-template .env
+```
+Add any necessary API keys there following the given format.
 
 # Contributing
 
@@ -51,10 +62,10 @@ With this in mind we recommend that you consider implementing the following util
 
 # Repo Info
 ## Poetry
-We use [poetry](https://python-poetry.org/) as our dependancy manager.
+We use [poetry](https://python-poetry.org/) as our dependency manager.
 The link above has great documentation but there is a TL;DR.
 
 - Install the package: `poetry install`
-- Add a dependancy: `poetry add <python-lib>`
-- Where are dependancies specified? `pyproject.toml` include the high level requirements. The latests exact versions installed are in `poetry.lock`.
+- Add a dependency: `poetry add <python-lib>`
+- Where are dependencies specified? `pyproject.toml` include the high level requirements. The latests exact versions installed are in `poetry.lock`.
 
