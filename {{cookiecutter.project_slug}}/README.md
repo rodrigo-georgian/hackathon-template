@@ -13,26 +13,25 @@ _TODO: Describe the main work streams (teams) in this hackathon, try to keep it 
 
 # Installation
 
-1. Recommended -- create and activate a conda env for this project:
+1. Environment management options
+    - Poetry: ```poetry shell```
+    - Conda: create and activate a conda env for this project:
 ```bash
 conda create -n {{cookiecutter.project_slug}} python=3.9
 conda activate {{cookiecutter.project_slug}}
 ```
 
-Note: After creating the env, you can also use the `make env` command from the root folder to activate the environment.
 
-1. Install package
+2. Install package
 ```
 poetry install
 ```
-1. Check installation worked by running 
+3. Check installation worked by running 
 ```
 pytest .
 ```
 
-Note: You can also use `make test` to run `pytest .`
-
-1. Create private environment file (this will not be committed!)
+4. Create private environment file (this will not be committed!)
 ```
 cp .env-template .env
 ```
