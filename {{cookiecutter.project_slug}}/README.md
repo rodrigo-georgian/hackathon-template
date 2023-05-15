@@ -14,13 +14,14 @@ _TODO: Describe the main work streams (teams) in this hackathon, try to keep it 
 # Installation
 
 1. Environment management options
-    - Poetry: ```poetry shell```
-    - Conda: create and activate a conda env for this project:
+   
+    a)  Poetry: ```poetry shell```
+    
+    b) Conda: create and activate a conda env for this project:
 ```bash
 conda create -n {{cookiecutter.project_slug}} python=3.9
 conda activate {{cookiecutter.project_slug}}
 ```
-
 
 2. Install package
 ```
